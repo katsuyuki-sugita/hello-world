@@ -9,6 +9,7 @@ GUIが立ち上がるので、下記の通り進める。
 ![Alt text](docs/vivado_install_1.PNG)
 <img src="docs/vivado_install_1.PNG" width="100px">
 ![Alt text](docs/vivado_install_2.PNG)
+<img src="docs/vivado_install_1.PNG" width="50%">
 ![Alt text](docs/vivado_install_3.PNG)
 ![Alt text](docs/vivado_install_4.PNG)
 ![Alt text](docs/vivado_install_5.PNG)

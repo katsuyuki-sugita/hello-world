@@ -6,8 +6,7 @@ Vivado Webpackインストール済みDocker Imageを作成する
 からダウンロード
 
 解凍し、root権限でxsetupを実行
-'''
-$ tar -zxvf  Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
+'''$ tar -zxvf  Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
 $ cd Xilinx_Vivado_SDK_2018.3_1207_2324
 $ sudo -E ./xsetup
 '''

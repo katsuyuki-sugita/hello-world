@@ -6,4 +6,11 @@ https://japan.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_V
     $ tar -zxvf  Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
     $ cd Xilinx_Vivado_SDK_2018.3_1207_2324
     $ sudo -E ./xsetup
-![Alt text](docs/vivado_install_1.PNG "Optional title")
+GUIが立ち上がるので、下記の通り進める。
+![Alt text](docs/vivado_install_1.PNG)
+![Alt text](docs/vivado_install_2.PNG)
+![Alt text](docs/vivado_install_3.PNG)
+![Alt text](docs/vivado_install_4.PNG)
+![Alt text](docs/vivado_install_5.PNG)
+![Alt text](docs/vivado_install_6.PNG)
+![Alt text](docs/vivado_install_7.PNG)

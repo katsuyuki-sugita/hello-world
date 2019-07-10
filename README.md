@@ -39,8 +39,19 @@ $ sudo -E ./xsetup
 ![Installation Finish](docs/vivado_install_7.png)
 しばらくすると、インストールが終了し、上記画面となる。
 
+## Ultra96 Board File追加
+1. Avnetのgitリポジトリからファイルを取得
+```
+$ git clone https://github.com/Avnet/bdf.git
+```
+2. Webkitのインストールディレクトリにコピー
+```
+$ cd bdf
+$ cp -Rdp ultra96* /opt/Xilinx/Vivado/2018.3/data/boards/board_files/
+```
+
 ## Docker Image作成
-1. 本ディレクトリに移動し、tarで固めて圧縮
+1. 本ディレクトリに移動し、Webkitのインストールディレクトリを丸ごとtarで固めて圧縮
 ```
 $ cd docker/vivado
 $ tar -C /opt -zcvf Xilinx_Webpack_2018_3.tgz Xilinx

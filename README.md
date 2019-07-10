@@ -1,21 +1,52 @@
 # Vivado
 Vivado Webpackインストール済みDocker Imageを作成する
-# Vivado Webpackのインストール
+## Vivado Webpackのインストール
+まずはHostコンピュータにVivado Webpackをインストールする。
 
+1. インストーラを
 <https://japan.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz>
 からダウンロード
 
-解凍し、root権限でxsetupを実行
-'''$ tar -zxvf  Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
+2. ダウンロードしたファイルを解凍し、root権限でxsetupを実行
+```
+$ tar -zxvf Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
 $ cd Xilinx_Vivado_SDK_2018.3_1207_2324
 $ sudo -E ./xsetup
-'''
+```
 
-GUIが立ち上がるので、下記の通り進める。
-![Alt text](docs/vivado_install_1.png)
-![Alt text](docs/vivado_install_2.png)
-![Alt text](docs/vivado_install_3.png)
-![Alt text](docs/vivado_install_4.png)
-![Alt text](docs/vivado_install_5.png)
-![Alt text](docs/vivado_install_6.png)
-![Alt text](docs/vivado_install_7.png)
+3. GUIが立ち上がるので、下記の通り進める。
+
+![Welcome](docs/vivado_install_1.png)
+別バージョンを勧められるが無視して`Continue`をクリックし、`Next>`をクリック。
+
+![License Agreements](docs/vivado_install_2.png)
+`I Agree`をすべてチェックし、`Next>`をクリック。
+
+![Select Edition](docs/vivado_install_3.png)
+`Vivado HL WebPACK`をチェックし、`Next>`をクリック。
+
+![Select Item](docs/vivado_install_4.png)
+画面の通りにチェックし、`Next>`をクリック。  
+(インストールサイズを減らすため、最低限の選択)
+
+![Select Directory](docs/vivado_install_5.png)
+`Select the installation directory`は`/opt/Xilinx`を入力し、`Next>`をクリック。  
+（コンテナ内のパスに合わせるため、必ずこのパスを指定すること）
+
+![Installation Summary](docs/vivado_install_6.png)
+`Next>`をクリック。
+
+![Installation Finish](docs/vivado_install_7.png)
+しばらくすると、インストールが終了し、上記画面となる。
+
+## Docker Image作成
+1. 本ディレクトリに移動し、tarで固めて圧縮
+```
+$ cd docker/vivado
+$ tar -C /opt -zcvf Xilinx_Webpack_2018_3.tgz Xilinx
+```
+
+2. Docker Imageを作成する
+```
+$ ./build_docker.sh
+```

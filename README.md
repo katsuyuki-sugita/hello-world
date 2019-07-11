@@ -11,6 +11,8 @@ Vivado Webpackインストール済みDocker Imageを作成する
 ```
 $ tar -zxvf Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz
 $ cd Xilinx_Vivado_SDK_2018.3_1207_2324
+$ export http_proxy=http://g3.konicaminolta.jp:8080/
+$ export https_proxy=http://g3.konicaminolta.jp:8080/
 $ sudo -E ./xsetup
 ```
 

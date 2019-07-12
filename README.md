@@ -6,6 +6,7 @@ Vivado Webpackインストール済みDocker Imageを作成する
 1. インストーラを
 <https://japan.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_2018.3_1207_2324.tar.gz>
 からダウンロード
+(Xilinxのユーザー登録が必要)
 
 2. ダウンロードしたファイルを解凍し、root権限でxsetupを実行
 ```
